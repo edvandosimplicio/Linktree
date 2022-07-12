@@ -1,0 +1,184 @@
+
+* { /*aqui configura tudo
+  reseto o padd e marg e o box-s como medida da borda de caixa*/
+  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*faz com que o pad e a marg conte na largura e altura do elemento*/
+
+}
+
+:root { /*abrangendo as variáveis de cores da página*/
+  
+  --bg-color: #EDF2FF;
+  --text-color: #07112b;
+  --primary-color: #4277fc;
+  --primary-color-dark: #2d55bb;
+
+}
+
+a { /*para que todos os links fiquem sem decoração (sem sublinlhação, marcação etc)*/
+  
+  text-decoration: none;
+
+}
+
+body { /*body com estilo padrão que é o tema light*/
+  
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+
+  transition: background 800ms;
+
+}
+
+.container { /*definindo a div principal da página*/
+  
+  text-align: center;
+  width: 300px;
+  padding: 3.7px;
+  margin: 60px auto;
+
+}
+
+.themes label { /*botão que muda o tema*/
+  
+  background: var(--primary-color);
+  border: none; 
+  border-radius: 50px; /*arredonda o botão*/
+  display: flex; /*configura o icon svg para dentro do label*/
+  position: relative;
+  left: 10px;
+  cursor: pointer; /*informa ao navegador que aquela label é clicável*/
+
+  height: 56px;
+  width: 56px;
+  align-items: center;
+  justify-content: center;
+
+  transition: background 800ms;
+
+}
+
+.themes label:hover {
+
+  background: var(--primary-color-dark);
+
+}
+
+#theme { /* deixa o checkbox ( botão que muda tema ) invisível */
+  
+  visibility: hidden;
+
+}
+
+.avatar { /*arredonda e define altura, largura etc da foto de perfil*/
+  
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  border: var(--primary-color) solid 4px;
+  padding: 1.2%;
+  opacity: 85%;
+
+  transition: opacity 800ms, border 800ms;
+
+}
+
+.avatar:hover {
+
+  opacity: 1;
+  border: var(--primary-color-dark) solid 4px;
+
+}
+
+#name { /*definindo titulo-nome*/
+  
+  margin-top: 48px;
+  margin-bottom: 8px;
+  font-size: 32px;
+
+}
+
+.username { /*definindo @ abaixo do nome*/
+  
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400px;
+  opacity: 0.8;
+  font-size: 18px;
+
+}
+
+.username a { /*tiro a decoração do username e ponho a cor conforme o tema*/
+  
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+
+ul { /*reseto o estilo de lista e defino a marg*/
+  
+  list-style: none;
+  margin: 48px 0px;
+
+}
+
+ul li a { /*definindo a lista de contatos da página*/
+  
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  color: white;
+  font-size: 14px;
+
+  margin-bottom: 16px;
+  border-radius: 50px;
+
+  transition: 800ms;
+
+}
+
+ul li a img { /*definindo icone das páginas*/
+  
+  height: 45px;
+  align-items: left;
+  justify-content: left;
+  width: 45px;
+  padding: 0.5rem;
+
+}
+
+ul li a:hover {
+
+  background: var(--primary-color-dark);
+
+}
+
+#rodapé {
+
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.6;
+  text-decoration: none;
+
+  transition: opacity 400ms;
+
+}
+
+#rodapé:hover {
+
+  opacity: 1;
+
+}
+
+#rodapé a {
+
+  color: var(--primary-color);
+
+}

@@ -1,0 +1,61 @@
+
+/* root para referência nessa página:
+
+  --bg-color: #EDF2FF;
+  --text-color: #07112b;
+  --primary-color: #4277fc;
+  --primary-color-dark: #2d55bb;
+  
+*/
+
+body.dark { /*muda o body pra estilo dark*/
+    background: var(--text-color);
+    color: var(--bg-color);
+    
+  }
+
+  body.dark.container{ /*muda a div principal pra estilo dark*/
+    box-shadow: 0 0 var(--primary-color-dark);
+  }
+
+  body.dark img{ /*estilo de img de perfil dark*/
+
+    opacity: 85%;
+  
+    transition: opacity 800ms, box-shadow 500ms;
+
+  }
+  
+  body.dark img:hover{
+
+    opacity: 1;
+    box-shadow: 0 0 15px var(--primary-color);
+
+  }
+
+  body.dark div label path[fill*='#EDF2FF'] { /*muda a cor do svg do botao que muda o tema*/
+    fill: var(--primary-color-dark);
+    background: var(--primary-color-dark);
+  }
+  
+  body.dark div label{ /*muda a cor com transição*/
+    background: var(--bg-color);
+    transition: 500ms;
+  }
+  
+  body.dark div label:hover{
+    background: rgb(207, 208, 216);
+  }
+
+  body.dark p a { /*muda a cor do @username*/
+    color: var(--bg-color);
+  }
+
+  body.dark ul li a{ /*mantém a cor original de cada link ( botão ) da lista de contatos */
+    background: var(--primary-color);
+    transition: 500ms;
+  }
+  
+  body.dark ul li a:hover{
+  box-shadow: 0 0 20px var(--primary-color);
+  }
