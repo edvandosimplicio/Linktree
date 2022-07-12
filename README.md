@@ -12,8 +12,6 @@ RocketLinks uma plataforma de social link.
 ### ​🖋️​ Alterações do projeto:
 
 - Botão para mudar para modo dark com javascript.
-- Função que pega dados das sociais medias e github, com javascript.
-
 
 > *O Maratona Explorer é um evento de conteúdos gratuitos voltados para programação que é promovido pela **@Rocketseat**.*
 
