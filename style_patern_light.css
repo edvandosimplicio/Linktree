@@ -45,7 +45,6 @@ body { /*body com estilo padrão que é o tema light*/
 }
 
 .themes{ /*fixa o botão acompanhando o rolamento da pagina*/
-  margin-top: 2vh;
   top: 0;
   position: sticky;
 }
