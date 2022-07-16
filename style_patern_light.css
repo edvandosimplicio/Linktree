@@ -28,6 +28,8 @@ body { /*body com estilo padrão que é o tema light*/
   background: var(--bg-color);
   color: var(--text-color);
   font-family: 'Roboto', sans-serif;
+  background-size: cover;
+  height: 100vh;
 
   transition: background 800ms;
 
@@ -40,6 +42,12 @@ body { /*body com estilo padrão que é o tema light*/
   padding: 3.7px;
   margin: 60px auto;
 
+}
+
+.themes{ /*fixa o botão acompanhando o rolamento da pagina*/
+  margin-top: 2vh;
+  top: 0;
+  position: sticky;
 }
 
 .themes label { /*botão que muda o tema*/
